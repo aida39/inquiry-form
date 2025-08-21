@@ -31,12 +31,13 @@
     </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
     <div class="max-w-5xl mx-auto py-12 px-6">
         <!-- タイトル -->
-        <h1 class="text-2xl font-medium text-gray-800 text-center mb-12">Contact</h1>
+        <h1 class="text-2xl font-medium  text-center mb-3">Inquiry</h1>
+        <p class="text-center mb-12">お問い合わせ内容を入力してください</p>
 
-        <form action="" method="POST" class="bg-white rounded-lg shadow-sm p-8">
+        <form action="{{ route ("save-session") }}" method="POST" class="bg-white rounded-lg shadow-sm p-8">
             @csrf
 
             <!-- お名前 -->
